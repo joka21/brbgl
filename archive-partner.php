@@ -1,5 +1,5 @@
 <?php
-get_header(); ?>
+get_header();
 $args = array(
     'post_type' => 'partner',
     'posts_per_page' => 30,
@@ -18,7 +18,7 @@ if ($posts) {
         $partner_description = get_field('Beschreibung_Betrieb');
         $partner_website = get_field('Webseite_Betrieb');
         $partner_image = get_field('Bild_Betrieb');
-        $partner_address = get_field('Adresse_Betrieb');
+        $partner_address = get_field('Adressse');
         
         // Hier können Sie den HTML-Code für jeden Partnerbeitrag erstellen und anzeigen
         ?>
@@ -37,5 +37,5 @@ if ($posts) {
     }
     wp_reset_postdata();
 }
-<?php get_footer();v
+get_footer();
 ?>
